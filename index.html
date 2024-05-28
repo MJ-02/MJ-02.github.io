@@ -136,7 +136,7 @@ const articlesData = [];
 
 async function fetchNewsArticles() {
   try {
-    const response =  await fetch('https://ntr65f5c-8080.euw.devtunnels.ms/',{method:"GET", mode:"no-cors"});
+    const response =  await fetch('https://ntr65f5c-8080.euw.devtunnels.ms/',{method:"GET"});
     if (!response.ok) {
         console.log(response)
       throw new Error(`HTTP error! status: ${response.status}`);
